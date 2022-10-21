@@ -1,0 +1,2 @@
+ALTER TABLE UserDetails
+ADD COLUMN description VARCHAR(100);

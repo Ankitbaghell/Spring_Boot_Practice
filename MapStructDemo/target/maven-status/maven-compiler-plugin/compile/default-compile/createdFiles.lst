@@ -1,0 +1,7 @@
+org\mapstructdemo\EmployeeDto.class
+org\mapstructdemo\EmpMapStructImpl.class
+org\mapstructdemo\ManagerDto.class
+org\mapstructdemo\Manager.class
+org\mapstructdemo\Main.class
+org\mapstructdemo\EmpMapStruct.class
+org\mapstructdemo\Employee.class
