@@ -2,6 +2,7 @@ package com.jooqgenerate.demo.repository;
 
 import com.jooqDemo.jooqDemo.Tables;
 import com.jooqDemo.jooqDemo.tables.pojos.Book;
+import com.jooqgenerate.demo.exceptions.BookNotFoundException;
 import org.jooq.DSLContext;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
@@ -15,14 +16,15 @@ public class BookRepository {
 
     // get All records
     public List<Book> getAllBooks(){
-        return dslContext.selectFrom(Tables.BOOK).fetchInto(Book.class);
+        List<Book> books = dslContext.selectFrom(Tables.BOOK).fetchInto(Book.class);
+        books.stream().findAny().orElseThrow(()->new BookNotFoundException("No Book Available"));
+        return books;
     }
 
     // get single record
     public Book getSingleBook(int id){
-        var books = dslContext.selectFrom(Tables.BOOK).where(Tables.BOOK.ID.eq(id)).fetchOne();
-//        return books.stream().findAny().orElseThrow(()->new RuntimeException("No Book found for id: "+id));
-        return books.into(Book.class);
+        List<Book> books = dslContext.selectFrom(Tables.BOOK).where(Tables.BOOK.ID.eq(id)).fetchInto(Book.class);
+        return books.stream().findAny().orElseThrow(()->new RuntimeException("No Book found for id: "+id));
     }
 
     // insert a record
@@ -33,6 +35,10 @@ public class BookRepository {
 
     // update a record
     public void updateRecord(Book book, int id){
+
+        List<Book> books = dslContext.selectFrom(Tables.BOOK).where(Tables.BOOK.ID.eq(id)).fetchInto(Book.class);
+        books.stream().findAny().orElseThrow(()->new BookNotFoundException("No Book with id "+id +" is available for update"));
+
         dslContext.update(Tables.BOOK)
                 .set(Tables.BOOK.ID,id)
                 .set(Tables.BOOK.TITLE, book.getTitle())
@@ -43,6 +49,9 @@ public class BookRepository {
 
     //delete a record
     public void deleteRecord(int id){
+        List<Book> books = dslContext.selectFrom(Tables.BOOK).where(Tables.BOOK.ID.eq(id)).fetchInto(Book.class);
+        books.stream().findAny().orElseThrow(()->new BookNotFoundException("No Book with id "+id +" is available for Deletion"));
+
         dslContext.deleteFrom(Tables.BOOK).where(Tables.BOOK.ID.eq(id)).execute();
     }
 
