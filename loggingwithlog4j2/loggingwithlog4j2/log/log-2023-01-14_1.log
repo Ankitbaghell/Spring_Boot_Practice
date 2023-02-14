@@ -1,0 +1,41 @@
+2023-01-14T11:09:06.569+0530 INFO Starting Loggingwithlog4j2Application using Java 17.0.4.1 on HVTNDAL1057 with PID 22340 (C:\Users\ankit.baghel\Downloads\loggingwithlog4j2\loggingwithlog4j2\build\classes\java\main started by ankit.baghel in C:\Users\ankit.baghel\Downloads\loggingwithlog4j2\loggingwithlog4j2)
+2023-01-14T11:09:06.587+0530 DEBUG Running with Spring Boot v2.7.7, Spring v5.3.24
+2023-01-14T11:09:06.589+0530 INFO No active profile set, falling back to 1 default profile: "default"
+2023-01-14T11:09:09.167+0530 INFO Tomcat initialized with port(s): 8080 (http)
+2023-01-14T11:09:09.443+0530 INFO Root WebApplicationContext: initialization completed in 2750 ms
+2023-01-14T11:09:10.236+0530 INFO Tomcat started on port(s): 8080 (http) with context path ''
+2023-01-14T11:09:10.253+0530 INFO Started Loggingwithlog4j2Application in 4.296 seconds (JVM running for 6.176)
+2023-01-14T11:09:10.257+0530 DEBUG A DEBUG Message
+2023-01-14T11:09:10.257+0530 INFO An INFO Message
+2023-01-14T11:09:10.257+0530 WARN A WARN Message
+2023-01-14T11:09:10.257+0530 ERROR An ERROR Message
+2023-01-14T11:09:17.701+0530 INFO Initializing Servlet 'dispatcherServlet'
+2023-01-14T11:09:17.702+0530 INFO Completed initialization in 1 ms
+2023-01-14T11:09:17.752+0530 DEBUG Request teekshana
+2023-01-14T11:09:17.753+0530 DEBUG Response Hi teekshana
+2023-01-14T11:11:01,335 INFO  [logging.loggingwithlog4j2.Loggingwithlog4j2Application] [main] Starting Loggingwithlog4j2Application using Java 17.0.4.1 on HVTNDAL1057 with PID 19868 (C:\Users\ankit.baghel\Downloads\loggingwithlog4j2\loggingwithlog4j2\build\classes\java\main started by ankit.baghel in C:\Users\ankit.baghel\Downloads\loggingwithlog4j2\loggingwithlog4j2)
+2023-01-14T11:11:01,363 DEBUG [logging.loggingwithlog4j2.Loggingwithlog4j2Application] [main] Running with Spring Boot v2.7.7, Spring v5.3.24
+2023-01-14T11:11:01,365 INFO  [logging.loggingwithlog4j2.Loggingwithlog4j2Application] [main] No active profile set, falling back to 1 default profile: "default"
+2023-01-14T11:11:03,674 INFO  [embedded.tomcat.TomcatWebServer] [main] Tomcat initialized with port(s): 8080 (http)
+2023-01-14T11:11:03,892 INFO  [servlet.context.ServletWebServerApplicationContext] [main] Root WebApplicationContext: initialization completed in 2440 ms
+2023-01-14T11:11:04,828 INFO  [embedded.tomcat.TomcatWebServer] [main] Tomcat started on port(s): 8080 (http) with context path ''
+2023-01-14T11:11:04,841 INFO  [logging.loggingwithlog4j2.Loggingwithlog4j2Application] [main] Started Loggingwithlog4j2Application in 4.212 seconds (JVM running for 5.789)
+2023-01-14T11:11:04,846 DEBUG [logging.loggingwithlog4j2.Loggingwithlog4j2Application] [main] A DEBUG Message
+2023-01-14T11:11:04,846 INFO  [logging.loggingwithlog4j2.Loggingwithlog4j2Application] [main] An INFO Message
+2023-01-14T11:11:04,846 WARN  [logging.loggingwithlog4j2.Loggingwithlog4j2Application] [main] A WARN Message
+2023-01-14T11:11:04,846 ERROR [logging.loggingwithlog4j2.Loggingwithlog4j2Application] [main] An ERROR Message
+2023-01-14T11:15:32,390 INFO  [logging.loggingwithlog4j2.Loggingwithlog4j2Application] [main] Starting Loggingwithlog4j2Application using Java 17.0.4.1 on HVTNDAL1057 with PID 7084 (C:\Users\ankit.baghel\Downloads\loggingwithlog4j2\loggingwithlog4j2\build\classes\java\main started by ankit.baghel in C:\Users\ankit.baghel\Downloads\loggingwithlog4j2\loggingwithlog4j2)
+2023-01-14T11:15:32,417 DEBUG [logging.loggingwithlog4j2.Loggingwithlog4j2Application] [main] Running with Spring Boot v2.7.7, Spring v5.3.24
+2023-01-14T11:15:32,420 INFO  [logging.loggingwithlog4j2.Loggingwithlog4j2Application] [main] No active profile set, falling back to 1 default profile: "default"
+2023-01-14T11:15:34,518 INFO  [embedded.tomcat.TomcatWebServer] [main] Tomcat initialized with port(s): 8080 (http)
+2023-01-14T11:15:34,871 INFO  [servlet.context.ServletWebServerApplicationContext] [main] Root WebApplicationContext: initialization completed in 2366 ms
+2023-01-14T11:15:35,736 INFO  [embedded.tomcat.TomcatWebServer] [main] Tomcat started on port(s): 8080 (http) with context path ''
+2023-01-14T11:15:35,756 INFO  [logging.loggingwithlog4j2.Loggingwithlog4j2Application] [main] Started Loggingwithlog4j2Application in 3.937 seconds (JVM running for 5.676)
+2023-01-14T11:15:35,761 DEBUG [logging.loggingwithlog4j2.Loggingwithlog4j2Application] [main] A DEBUG Message
+2023-01-14T11:15:35,762 INFO  [logging.loggingwithlog4j2.Loggingwithlog4j2Application] [main] An INFO Message
+2023-01-14T11:15:35,762 WARN  [logging.loggingwithlog4j2.Loggingwithlog4j2Application] [main] A WARN Message
+2023-01-14T11:15:35,763 ERROR [logging.loggingwithlog4j2.Loggingwithlog4j2Application] [main] An ERROR Message
+2023-01-14T11:15:43,603 INFO  [web.servlet.DispatcherServlet] [http-nio-8080-exec-2] Initializing Servlet 'dispatcherServlet'
+2023-01-14T11:15:43,605 INFO  [web.servlet.DispatcherServlet] [http-nio-8080-exec-2] Completed initialization in 1 ms
+2023-01-14T11:15:43,705 DEBUG [loggingwithlog4j2.controller.ApiController] [http-nio-8080-exec-2] Request teekshana
+2023-01-14T11:15:43,706 DEBUG [loggingwithlog4j2.controller.ApiController] [http-nio-8080-exec-2] Response Hi teekshana

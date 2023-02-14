@@ -1,0 +1,41 @@
+Configutation:
+  status: warn
+
+  Properties:
+    Property:
+      name: log-pattern
+      value:  "%d{ISO8601} %-5p [%c{3}] [%t] %m%n"
+
+  Appenders:
+    Console:
+      name: CONSOLE
+      target: SYSTEM_OUT
+#      follow: true
+      PatternLayout:
+        pattern: ${log-pattern}
+    RollingFile:
+      - name: APPLICATION
+#        fileName: ${log-path}/application.log
+        filePattern: "log/log-%d{yyyy-MM-dd}_%i.log.gz"
+        PatternLayout:
+          pattern: ${log-pattern}
+        Policies:
+          SizeBasedTriggeringPolicy:
+            size: 20 MB
+#        DefaultRollOverStrategy:
+#              max: 1
+
+  Loggers:
+    Root:
+      level: info
+      AppenderRef:
+        - ref: CONSOLE
+        - ref: APPLICATION
+    Logger:
+      - name: com.springboot.logging.loggingwithlog4j2
+        level: debug
+        additivity: false
+        AppenderRef:
+          - ref: CONSOLE
+          - ref: APPLICATION
+

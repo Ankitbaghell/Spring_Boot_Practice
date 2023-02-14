@@ -1,0 +1,68 @@
+plugins {
+	id 'java'
+	id 'org.springframework.boot' version '2.7.6'
+	id 'io.spring.dependency-management' version '1.0.15.RELEASE'
+	id "nu.studer.jooq" version "7.1.1"
+}
+
+group = 'com.readwriteinpropertiesfile'
+group = 'com.jooqgenerate'
+version = '0.0.1-SNAPSHOT'
+sourceCompatibility = '17'
+
+repositories {
+	mavenCentral()
+}
+
+dependencies {
+	implementation 'org.springframework.boot:spring-boot-starter-jooq'
+	implementation 'org.springframework.boot:spring-boot-starter-web'
+	jooqGenerator 'jakarta.xml.bind:jakarta.xml.bind-api:3.0.1'
+	jooqGenerator 'com.mysql:mysql-connector-j'
+	implementation 'javax.xml.bind:jaxb-api:2.4.0-b180830.0359'
+	runtimeOnly 'com.mysql:mysql-connector-j'
+	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+}
+
+tasks.named('test') {
+	useJUnitPlatform()
+}
+
+import org.jooq.meta.jaxb.Logging
+
+jooq {
+
+	configurations {
+		main {  // name of the jOOQ configuration
+//			generateSchemaSourceOnCompilation = true  // default (can be omitted)
+
+			generationTool {
+				logging = Logging.WARN
+				jdbc {
+					driver = 'com.mysql.cj.jdbc.Driver'
+					url = 'jdbc:mysql://localhost:3306/management'
+					user = 'root'
+					password = 'mysql'
+				}
+				generator {
+					name = 'org.jooq.codegen.DefaultGenerator'
+					database {
+						name = 'org.jooq.meta.mysql.MySQLDatabase'
+						inputSchema = 'management'
+					}
+					generate {
+						deprecated = false
+						records = true
+						immutablePojos = true
+						fluentSetters = true
+					}
+					target {
+						packageName = 'com.jooqDemo.jooqDemo'
+//						 directory = 'build/generated-src/jooq/main'  // default (can be omitted)
+					}
+					strategy.name = 'org.jooq.codegen.DefaultGeneratorStrategy'
+				}
+			}
+		}
+	}
+}

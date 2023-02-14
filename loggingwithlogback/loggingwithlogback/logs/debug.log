@@ -1,0 +1,68 @@
+2022-12-28 14:23:25 [http-nio-8080-exec-7] DEBUG c.s.l.l.controller.ApiController -
+                Request virat
+2022-12-28 14:23:25 [http-nio-8080-exec-7] DEBUG c.s.l.l.controller.ApiController -
+                Response Hi virat
+2022-12-28 14:23:36 [http-nio-8080-exec-8] DEBUG c.s.l.l.controller.ApiController -
+                Request test
+2022-12-28 14:24:19 [main] INFO  c.s.l.l.LoggingwithlogbackApplication -
+                Starting LoggingwithlogbackApplication using Java 17.0.4.1 on HVTNDAL1057 with PID 4452 (C:\Users\ankit.baghel\Downloads\loggingwithlogback\loggingwithlogback\build\classes\java\main started by ankit.baghel in C:\Users\ankit.baghel\Downloads\loggingwithlogback\loggingwithlogback)
+2022-12-28 14:24:19 [main] DEBUG c.s.l.l.LoggingwithlogbackApplication -
+                Running with Spring Boot v2.7.7, Spring v5.3.24
+2022-12-28 14:24:19 [main] INFO  c.s.l.l.LoggingwithlogbackApplication -
+                No active profile set, falling back to 1 default profile: "default"
+2022-12-28 14:24:22 [main] INFO  c.s.l.l.LoggingwithlogbackApplication -
+                Started LoggingwithlogbackApplication in 4.036 seconds (JVM running for 4.96)
+2022-12-28 14:24:26 [http-nio-8080-exec-1] DEBUG c.s.l.l.controller.ApiController -
+                Request
+2022-12-28 14:24:33 [http-nio-8080-exec-4] DEBUG c.s.l.l.controller.ApiController -
+                Request
+2022-12-28 14:24:33 [http-nio-8080-exec-4] DEBUG c.s.l.l.controller.ApiController -
+                Response
+2022-12-28 14:24:53 [main] INFO  c.s.l.l.LoggingwithlogbackApplication -
+                Starting LoggingwithlogbackApplication using Java 17.0.4.1 on HVTNDAL1057 with PID 12356 (C:\Users\ankit.baghel\Downloads\loggingwithlogback\loggingwithlogback\build\classes\java\main started by ankit.baghel in C:\Users\ankit.baghel\Downloads\loggingwithlogback\loggingwithlogback)
+2022-12-28 14:24:53 [main] DEBUG c.s.l.l.LoggingwithlogbackApplication -
+                Running with Spring Boot v2.7.7, Spring v5.3.24
+2022-12-28 14:24:53 [main] INFO  c.s.l.l.LoggingwithlogbackApplication -
+                No active profile set, falling back to 1 default profile: "default"
+2022-12-28 14:24:56 [main] INFO  c.s.l.l.LoggingwithlogbackApplication -
+                Started LoggingwithlogbackApplication in 4.039 seconds (JVM running for 5.344)
+2022-12-28 14:25:00 [http-nio-8080-exec-2] DEBUG c.s.l.l.controller.ApiController -
+                Request virat
+2022-12-28 14:25:00 [http-nio-8080-exec-2] DEBUG c.s.l.l.controller.ApiController -
+                Response
+2022-12-28 14:45:16 [main] INFO  c.s.l.l.LoggingwithlogbackApplication -
+                Starting LoggingwithlogbackApplication using Java 17.0.4.1 on HVTNDAL1057 with PID 16032 (C:\Users\ankit.baghel\Downloads\loggingwithlogback\loggingwithlogback\build\classes\java\main started by ankit.baghel in C:\Users\ankit.baghel\Downloads\loggingwithlogback\loggingwithlogback)
+2022-12-28 14:45:16 [main] DEBUG c.s.l.l.LoggingwithlogbackApplication -
+                Running with Spring Boot v2.7.7, Spring v5.3.24
+2022-12-28 14:45:16 [main] INFO  c.s.l.l.LoggingwithlogbackApplication -
+                No active profile set, falling back to 1 default profile: "default"
+2022-12-28 14:45:20 [main] INFO  c.s.l.l.LoggingwithlogbackApplication -
+                Started LoggingwithlogbackApplication in 4.185 seconds (JVM running for 5.074)
+2022-12-28 14:45:31 [http-nio-8080-exec-2] DEBUG c.s.l.l.controller.ApiController -
+                Request rohit
+2022-12-28 14:45:31 [http-nio-8080-exec-2] DEBUG c.s.l.l.controller.ApiController -
+                Response Hi rohit
+2022-12-28 14:46:55 [main] INFO  c.s.l.l.LoggingwithlogbackApplication -
+                Starting LoggingwithlogbackApplication using Java 17.0.4.1 on HVTNDAL1057 with PID 6896 (C:\Users\ankit.baghel\Downloads\loggingwithlogback\loggingwithlogback\build\classes\java\main started by ankit.baghel in C:\Users\ankit.baghel\Downloads\loggingwithlogback\loggingwithlogback)
+2022-12-28 14:46:55 [main] DEBUG c.s.l.l.LoggingwithlogbackApplication -
+                Running with Spring Boot v2.7.7, Spring v5.3.24
+2022-12-28 14:46:55 [main] INFO  c.s.l.l.LoggingwithlogbackApplication -
+                No active profile set, falling back to 1 default profile: "default"
+2022-12-28 14:46:58 [main] INFO  c.s.l.l.LoggingwithlogbackApplication -
+                Started LoggingwithlogbackApplication in 4.076 seconds (JVM running for 5.07)
+2022-12-28 14:47:08 [http-nio-8080-exec-2] DEBUG c.s.l.l.controller.ApiController -
+                Request garima
+2022-12-28 14:47:08 [http-nio-8080-exec-2] DEBUG c.s.l.l.controller.ApiController -
+                Response Hi garima
+2022-12-28 14:47:52 [main] INFO  c.s.l.l.LoggingwithlogbackApplication -
+                Starting LoggingwithlogbackApplication using Java 17.0.4.1 on HVTNDAL1057 with PID 20736 (C:\Users\ankit.baghel\Downloads\loggingwithlogback\loggingwithlogback\build\classes\java\main started by ankit.baghel in C:\Users\ankit.baghel\Downloads\loggingwithlogback\loggingwithlogback)
+2022-12-28 14:47:52 [main] DEBUG c.s.l.l.LoggingwithlogbackApplication -
+                Running with Spring Boot v2.7.7, Spring v5.3.24
+2022-12-28 14:47:52 [main] INFO  c.s.l.l.LoggingwithlogbackApplication -
+                No active profile set, falling back to 1 default profile: "default"
+2022-12-28 14:47:55 [main] INFO  c.s.l.l.LoggingwithlogbackApplication -
+                Started LoggingwithlogbackApplication in 3.998 seconds (JVM running for 5.012)
+2022-12-28 14:48:04 [http-nio-8080-exec-2] DEBUG c.s.l.l.controller.ApiController -
+                Request shruti
+2022-12-28 14:48:04 [http-nio-8080-exec-2] DEBUG c.s.l.l.controller.ApiController -
+                Response Hi shruti

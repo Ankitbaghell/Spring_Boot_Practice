@@ -1,0 +1,210 @@
+2023-01-16T13:50:38,887 INFO  [logging.loggingwithlog4j2.Loggingwithlog4j2Application] [main] Starting Loggingwithlog4j2Application using Java 17.0.4.1 on HVTNDAL1057 with PID 4992 (C:\Users\ankit.baghel\Downloads\loggingwithlog4j2\loggingwithlog4j2\build\classes\java\main started by ankit.baghel in C:\Users\ankit.baghel\Downloads\loggingwithlog4j2\loggingwithlog4j2)
+2023-01-16T13:50:38,896 DEBUG [logging.loggingwithlog4j2.Loggingwithlog4j2Application] [main] Running with Spring Boot v2.7.7, Spring v5.3.24
+2023-01-16T13:50:38,897 INFO  [logging.loggingwithlog4j2.Loggingwithlog4j2Application] [main] No active profile set, falling back to 1 default profile: "default"
+2023-01-16T13:50:39,820 INFO  [embedded.tomcat.TomcatWebServer] [main] Tomcat initialized with port(s): 8080 (http)
+2023-01-16T13:50:39,952 INFO  [servlet.context.ServletWebServerApplicationContext] [main] Root WebApplicationContext: initialization completed in 1015 ms
+2023-01-16T13:50:40,330 INFO  [embedded.tomcat.TomcatWebServer] [main] Tomcat started on port(s): 8080 (http) with context path ''
+2023-01-16T13:50:40,340 INFO  [logging.loggingwithlog4j2.Loggingwithlog4j2Application] [main] Started Loggingwithlog4j2Application in 1.735 seconds (JVM running for 4.429)
+2023-01-16T13:50:40,344 DEBUG [logging.loggingwithlog4j2.Loggingwithlog4j2Application] [main] A DEBUG Message
+2023-01-16T13:50:40,344 INFO  [logging.loggingwithlog4j2.Loggingwithlog4j2Application] [main] An INFO Message
+2023-01-16T13:50:40,344 WARN  [logging.loggingwithlog4j2.Loggingwithlog4j2Application] [main] A WARN Message
+2023-01-16T13:50:40,344 ERROR [logging.loggingwithlog4j2.Loggingwithlog4j2Application] [main] An ERROR Message
+2023-01-16T13:50:44,966 INFO  [web.servlet.DispatcherServlet] [http-nio-8080-exec-2] Initializing Servlet 'dispatcherServlet'
+2023-01-16T13:50:44,968 INFO  [web.servlet.DispatcherServlet] [http-nio-8080-exec-2] Completed initialization in 1 ms
+2023-01-16T13:50:45,005 DEBUG [loggingwithlog4j2.controller.ApiController] [http-nio-8080-exec-2] Request shanaka
+2023-01-16T13:50:45,006 DEBUG [loggingwithlog4j2.controller.ApiController] [http-nio-8080-exec-2] Response Hi shanaka
+2023-01-16T14:01:09,398 ERROR [boot.diagnostics.LoggingFailureAnalysisReporter] [main] 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+An attempt was made to call a method that does not exist. The attempt was made from the following location:
+
+    org.springframework.boot.logging.log4j2.Log4J2LoggingSystem.initialize(Log4J2LoggingSystem.java:242)
+
+The following method did not exist:
+
+    'void org.apache.logging.log4j.util.PropertiesUtil.addPropertySource(org.apache.logging.log4j.util.PropertySource)'
+
+The calling method's class, org.springframework.boot.logging.log4j2.Log4J2LoggingSystem, was loaded from the following location:
+
+    jar:file:/C:/Users/ankit.baghel/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot/3.0.0/dcf84aaccdb294b8fe53a92b57efecf16708eb2c/spring-boot-3.0.0.jar!/org/springframework/boot/logging/log4j2/Log4J2LoggingSystem.class
+
+The called method's class, org.apache.logging.log4j.util.PropertiesUtil, is available from the following locations:
+
+    jar:file:/C:/Users/ankit.baghel/.gradle/caches/modules-2/files-2.1/org.apache.logging.log4j/log4j-api/2.17.2/f42d6afa111b4dec5d2aea0fe2197240749a4ea6/log4j-api-2.17.2.jar!/org/apache/logging/log4j/util/PropertiesUtil.class
+
+The called method's class hierarchy was loaded from the following locations:
+
+    org.apache.logging.log4j.util.PropertiesUtil: file:/C:/Users/ankit.baghel/.gradle/caches/modules-2/files-2.1/org.apache.logging.log4j/log4j-api/2.17.2/f42d6afa111b4dec5d2aea0fe2197240749a4ea6/log4j-api-2.17.2.jar
+
+
+Action:
+
+Correct the classpath of your application so that it contains compatible versions of the classes org.springframework.boot.logging.log4j2.Log4J2LoggingSystem and org.apache.logging.log4j.util.PropertiesUtil
+
+2023-01-16T14:01:52,843 ERROR [boot.diagnostics.LoggingFailureAnalysisReporter] [main] 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+An attempt was made to call a method that does not exist. The attempt was made from the following location:
+
+    org.springframework.boot.logging.log4j2.Log4J2LoggingSystem.initialize(Log4J2LoggingSystem.java:242)
+
+The following method did not exist:
+
+    'void org.apache.logging.log4j.util.PropertiesUtil.addPropertySource(org.apache.logging.log4j.util.PropertySource)'
+
+The calling method's class, org.springframework.boot.logging.log4j2.Log4J2LoggingSystem, was loaded from the following location:
+
+    jar:file:/C:/Users/ankit.baghel/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot/3.0.0/dcf84aaccdb294b8fe53a92b57efecf16708eb2c/spring-boot-3.0.0.jar!/org/springframework/boot/logging/log4j2/Log4J2LoggingSystem.class
+
+The called method's class, org.apache.logging.log4j.util.PropertiesUtil, is available from the following locations:
+
+    jar:file:/C:/Users/ankit.baghel/.gradle/caches/modules-2/files-2.1/org.apache.logging.log4j/log4j-api/2.13.3/ec1508160b93d274b1add34419b897bae84c6ca9/log4j-api-2.13.3.jar!/org/apache/logging/log4j/util/PropertiesUtil.class
+
+The called method's class hierarchy was loaded from the following locations:
+
+    org.apache.logging.log4j.util.PropertiesUtil: file:/C:/Users/ankit.baghel/.gradle/caches/modules-2/files-2.1/org.apache.logging.log4j/log4j-api/2.13.3/ec1508160b93d274b1add34419b897bae84c6ca9/log4j-api-2.13.3.jar
+
+
+Action:
+
+Correct the classpath of your application so that it contains compatible versions of the classes org.springframework.boot.logging.log4j2.Log4J2LoggingSystem and org.apache.logging.log4j.util.PropertiesUtil
+
+2023-01-16T14:07:54,726 ERROR [boot.diagnostics.LoggingFailureAnalysisReporter] [main] 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+An attempt was made to call a method that does not exist. The attempt was made from the following location:
+
+    org.springframework.boot.logging.log4j2.Log4J2LoggingSystem.initialize(Log4J2LoggingSystem.java:242)
+
+The following method did not exist:
+
+    'void org.apache.logging.log4j.util.PropertiesUtil.addPropertySource(org.apache.logging.log4j.util.PropertySource)'
+
+The calling method's class, org.springframework.boot.logging.log4j2.Log4J2LoggingSystem, was loaded from the following location:
+
+    jar:file:/C:/Users/ankit.baghel/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot/3.0.0/dcf84aaccdb294b8fe53a92b57efecf16708eb2c/spring-boot-3.0.0.jar!/org/springframework/boot/logging/log4j2/Log4J2LoggingSystem.class
+
+The called method's class, org.apache.logging.log4j.util.PropertiesUtil, is available from the following locations:
+
+    jar:file:/C:/Users/ankit.baghel/.gradle/caches/modules-2/files-2.1/org.apache.logging.log4j/log4j-api/2.13.3/ec1508160b93d274b1add34419b897bae84c6ca9/log4j-api-2.13.3.jar!/org/apache/logging/log4j/util/PropertiesUtil.class
+
+The called method's class hierarchy was loaded from the following locations:
+
+    org.apache.logging.log4j.util.PropertiesUtil: file:/C:/Users/ankit.baghel/.gradle/caches/modules-2/files-2.1/org.apache.logging.log4j/log4j-api/2.13.3/ec1508160b93d274b1add34419b897bae84c6ca9/log4j-api-2.13.3.jar
+
+
+Action:
+
+Correct the classpath of your application so that it contains compatible versions of the classes org.springframework.boot.logging.log4j2.Log4J2LoggingSystem and org.apache.logging.log4j.util.PropertiesUtil
+
+2023-01-16T14:08:33,448 ERROR [boot.diagnostics.LoggingFailureAnalysisReporter] [main] 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+An attempt was made to call a method that does not exist. The attempt was made from the following location:
+
+    org.springframework.boot.logging.log4j2.Log4J2LoggingSystem.initialize(Log4J2LoggingSystem.java:242)
+
+The following method did not exist:
+
+    'void org.apache.logging.log4j.util.PropertiesUtil.addPropertySource(org.apache.logging.log4j.util.PropertySource)'
+
+The calling method's class, org.springframework.boot.logging.log4j2.Log4J2LoggingSystem, was loaded from the following location:
+
+    jar:file:/C:/Users/ankit.baghel/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot/3.0.0/dcf84aaccdb294b8fe53a92b57efecf16708eb2c/spring-boot-3.0.0.jar!/org/springframework/boot/logging/log4j2/Log4J2LoggingSystem.class
+
+The called method's class, org.apache.logging.log4j.util.PropertiesUtil, is available from the following locations:
+
+    jar:file:/C:/Users/ankit.baghel/.gradle/caches/modules-2/files-2.1/org.apache.logging.log4j/log4j-api/2.13.3/ec1508160b93d274b1add34419b897bae84c6ca9/log4j-api-2.13.3.jar!/org/apache/logging/log4j/util/PropertiesUtil.class
+
+The called method's class hierarchy was loaded from the following locations:
+
+    org.apache.logging.log4j.util.PropertiesUtil: file:/C:/Users/ankit.baghel/.gradle/caches/modules-2/files-2.1/org.apache.logging.log4j/log4j-api/2.13.3/ec1508160b93d274b1add34419b897bae84c6ca9/log4j-api-2.13.3.jar
+
+
+Action:
+
+Correct the classpath of your application so that it contains compatible versions of the classes org.springframework.boot.logging.log4j2.Log4J2LoggingSystem and org.apache.logging.log4j.util.PropertiesUtil
+
+2023-01-16T14:12:37,620 INFO  [logging.loggingwithlog4j2.Loggingwithlog4j2Application] [main] Starting Loggingwithlog4j2Application using Java 17.0.4.1 with PID 14812 (C:\Users\ankit.baghel\Downloads\loggingwithlog4j2\loggingwithlog4j2\build\classes\java\main started by ankit.baghel in C:\Users\ankit.baghel\Downloads\loggingwithlog4j2\loggingwithlog4j2)
+2023-01-16T14:12:37,630 DEBUG [logging.loggingwithlog4j2.Loggingwithlog4j2Application] [main] Running with Spring Boot v3.0.0, Spring v6.0.2
+2023-01-16T14:12:37,631 INFO  [logging.loggingwithlog4j2.Loggingwithlog4j2Application] [main] No active profile set, falling back to 1 default profile: "default"
+2023-01-16T14:12:38,576 INFO  [embedded.tomcat.TomcatWebServer] [main] Tomcat initialized with port(s): 8080 (http)
+2023-01-16T14:12:38,691 INFO  [servlet.context.ServletWebServerApplicationContext] [main] Root WebApplicationContext: initialization completed in 1027 ms
+2023-01-16T14:12:39,070 INFO  [embedded.tomcat.TomcatWebServer] [main] Tomcat started on port(s): 8080 (http) with context path ''
+2023-01-16T14:12:39,077 INFO  [logging.loggingwithlog4j2.Loggingwithlog4j2Application] [main] Started Loggingwithlog4j2Application in 1.741 seconds (process running for 2.49)
+2023-01-16T14:12:52,455 INFO  [web.servlet.DispatcherServlet] [http-nio-8080-exec-2] Initializing Servlet 'dispatcherServlet'
+2023-01-16T14:12:52,456 INFO  [web.servlet.DispatcherServlet] [http-nio-8080-exec-2] Completed initialization in 1 ms
+2023-01-16T14:14:42,788 INFO  [logging.loggingwithlog4j2.Loggingwithlog4j2Application] [main] Starting Loggingwithlog4j2Application using Java 17.0.4.1 with PID 21992 (C:\Users\ankit.baghel\Downloads\loggingwithlog4j2\loggingwithlog4j2\build\classes\java\main started by ankit.baghel in C:\Users\ankit.baghel\Downloads\loggingwithlog4j2\loggingwithlog4j2)
+2023-01-16T14:14:42,798 DEBUG [logging.loggingwithlog4j2.Loggingwithlog4j2Application] [main] Running with Spring Boot v3.0.0, Spring v6.0.2
+2023-01-16T14:14:42,800 INFO  [logging.loggingwithlog4j2.Loggingwithlog4j2Application] [main] No active profile set, falling back to 1 default profile: "default"
+2023-01-16T14:14:43,686 INFO  [embedded.tomcat.TomcatWebServer] [main] Tomcat initialized with port(s): 8080 (http)
+2023-01-16T14:14:43,806 INFO  [servlet.context.ServletWebServerApplicationContext] [main] Root WebApplicationContext: initialization completed in 972 ms
+2023-01-16T14:14:44,265 INFO  [embedded.tomcat.TomcatWebServer] [main] Tomcat started on port(s): 8080 (http) with context path ''
+2023-01-16T14:14:44,270 INFO  [logging.loggingwithlog4j2.Loggingwithlog4j2Application] [main] Started Loggingwithlog4j2Application in 1.781 seconds (process running for 2.505)
+2023-01-16T14:14:50,149 INFO  [web.servlet.DispatcherServlet] [http-nio-8080-exec-2] Initializing Servlet 'dispatcherServlet'
+2023-01-16T14:14:50,150 INFO  [web.servlet.DispatcherServlet] [http-nio-8080-exec-2] Completed initialization in 1 ms
+2023-01-16T14:37:11,617 INFO  [logging.loggingwithlog4j2.Loggingwithlog4j2Application] [main] Starting Loggingwithlog4j2Application using Java 17.0.4.1 with PID 19744 (C:\Users\ankit.baghel\Downloads\loggingwithlog4j2\loggingwithlog4j2\build\classes\java\main started by ankit.baghel in C:\Users\ankit.baghel\Downloads\loggingwithlog4j2\loggingwithlog4j2)
+2023-01-16T14:37:11,634 DEBUG [logging.loggingwithlog4j2.Loggingwithlog4j2Application] [main] Running with Spring Boot v3.0.0, Spring v6.0.2
+2023-01-16T14:37:11,635 INFO  [logging.loggingwithlog4j2.Loggingwithlog4j2Application] [main] No active profile set, falling back to 1 default profile: "default"
+2023-01-16T14:37:12,804 INFO  [embedded.tomcat.TomcatWebServer] [main] Tomcat initialized with port(s): 8080 (http)
+2023-01-16T14:37:12,812 INFO  [coyote.http11.Http11NioProtocol] [main] Initializing ProtocolHandler ["http-nio-8080"]
+2023-01-16T14:37:12,813 INFO  [catalina.core.StandardService] [main] Starting service [Tomcat]
+2023-01-16T14:37:12,814 INFO  [catalina.core.StandardEngine] [main] Starting Servlet engine: [Apache Tomcat/10.1.1]
+2023-01-16T14:37:12,947 INFO  [[Tomcat].[localhost].[/]] [main] Initializing Spring embedded WebApplicationContext
+2023-01-16T14:37:12,951 INFO  [servlet.context.ServletWebServerApplicationContext] [main] Root WebApplicationContext: initialization completed in 1267 ms
+2023-01-16T14:37:13,456 INFO  [coyote.http11.Http11NioProtocol] [main] Starting ProtocolHandler ["http-nio-8080"]
+2023-01-16T14:37:13,520 INFO  [embedded.tomcat.TomcatWebServer] [main] Tomcat started on port(s): 8080 (http) with context path ''
+2023-01-16T14:37:13,534 INFO  [logging.loggingwithlog4j2.Loggingwithlog4j2Application] [main] Started Loggingwithlog4j2Application in 2.401 seconds (process running for 3.457)
+2023-01-16T14:37:13,537 DEBUG [logging.loggingwithlog4j2.Loggingwithlog4j2Application] [main] A DEBUG Message
+2023-01-16T14:37:13,538 INFO  [logging.loggingwithlog4j2.Loggingwithlog4j2Application] [main] An INFO Message
+2023-01-16T14:37:13,538 WARN  [logging.loggingwithlog4j2.Loggingwithlog4j2Application] [main] A WARN Message
+2023-01-16T14:37:13,538 ERROR [logging.loggingwithlog4j2.Loggingwithlog4j2Application] [main] An ERROR Message
+2023-01-16T14:37:27,672 INFO  [[Tomcat].[localhost].[/]] [http-nio-8080-exec-2] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-01-16T14:37:27,672 INFO  [web.servlet.DispatcherServlet] [http-nio-8080-exec-2] Initializing Servlet 'dispatcherServlet'
+2023-01-16T14:37:27,673 INFO  [web.servlet.DispatcherServlet] [http-nio-8080-exec-2] Completed initialization in 1 ms
+2023-01-16T14:37:27,703 DEBUG [loggingwithlog4j2.controller.ApiController] [http-nio-8080-exec-2] Request ram ji
+2023-01-16T14:37:27,704 DEBUG [loggingwithlog4j2.controller.ApiController] [http-nio-8080-exec-2] Response Hi ram ji
+2023-01-16T14:37:45,824 DEBUG [loggingwithlog4j2.controller.ApiController] [http-nio-8080-exec-3] Request hanuman ji
+2023-01-16T14:37:45,825 DEBUG [loggingwithlog4j2.controller.ApiController] [http-nio-8080-exec-3] Response Hi hanuman ji
+2023-01-16T15:59:55,091 INFO  [logging.loggingwithlog4j2.Loggingwithlog4j2Application] [main] Starting Loggingwithlog4j2Application using Java 17.0.4.1 with PID 8356 (C:\Users\ankit.baghel\Downloads\loggingwithlog4j2\loggingwithlog4j2\build\classes\java\main started by ankit.baghel in C:\Users\ankit.baghel\Downloads\loggingwithlog4j2\loggingwithlog4j2)
+2023-01-16T15:59:55,112 DEBUG [logging.loggingwithlog4j2.Loggingwithlog4j2Application] [main] Running with Spring Boot v3.0.0, Spring v6.0.2
+2023-01-16T15:59:55,113 INFO  [logging.loggingwithlog4j2.Loggingwithlog4j2Application] [main] No active profile set, falling back to 1 default profile: "default"
+2023-01-16T15:59:57,182 INFO  [embedded.tomcat.TomcatWebServer] [main] Tomcat initialized with port(s): 8080 (http)
+2023-01-16T15:59:57,204 INFO  [coyote.http11.Http11NioProtocol] [main] Initializing ProtocolHandler ["http-nio-8080"]
+2023-01-16T15:59:57,206 INFO  [catalina.core.StandardService] [main] Starting service [Tomcat]
+2023-01-16T15:59:57,207 INFO  [catalina.core.StandardEngine] [main] Starting Servlet engine: [Apache Tomcat/10.1.1]
+2023-01-16T15:59:57,525 INFO  [[Tomcat].[localhost].[/]] [main] Initializing Spring embedded WebApplicationContext
+2023-01-16T15:59:57,532 INFO  [servlet.context.ServletWebServerApplicationContext] [main] Root WebApplicationContext: initialization completed in 2320 ms
+2023-01-16T15:59:58,444 INFO  [coyote.http11.Http11NioProtocol] [main] Starting ProtocolHandler ["http-nio-8080"]
+2023-01-16T15:59:58,527 INFO  [embedded.tomcat.TomcatWebServer] [main] Tomcat started on port(s): 8080 (http) with context path ''
+2023-01-16T15:59:58,552 INFO  [logging.loggingwithlog4j2.Loggingwithlog4j2Application] [main] Started Loggingwithlog4j2Application in 4.327 seconds (process running for 6.262)
+2023-01-16T15:59:58,556 DEBUG [logging.loggingwithlog4j2.Loggingwithlog4j2Application] [main] A DEBUG Message
+2023-01-16T15:59:58,557 INFO  [logging.loggingwithlog4j2.Loggingwithlog4j2Application] [main] An INFO Message
+2023-01-16T15:59:58,557 WARN  [logging.loggingwithlog4j2.Loggingwithlog4j2Application] [main] A WARN Message
+2023-01-16T15:59:58,557 ERROR [logging.loggingwithlog4j2.Loggingwithlog4j2Application] [main] An ERROR Message
+2023-01-16T16:01:07,173 INFO  [[Tomcat].[localhost].[/]] [http-nio-8080-exec-2] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-01-16T16:01:07,174 INFO  [web.servlet.DispatcherServlet] [http-nio-8080-exec-2] Initializing Servlet 'dispatcherServlet'
+2023-01-16T16:01:07,177 INFO  [web.servlet.DispatcherServlet] [http-nio-8080-exec-2] Completed initialization in 3 ms
+2023-01-16T16:01:07,243 WARN  [mvc.support.DefaultHandlerExceptionResolver] [http-nio-8080-exec-2] Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' is not supported]
+2023-01-16T16:01:16,234 DEBUG [loggingwithlog4j2.controller.ApiController] [http-nio-8080-exec-3] Request uuuu
+2023-01-16T16:01:16,235 DEBUG [loggingwithlog4j2.controller.ApiController] [http-nio-8080-exec-3] Response Hi uuuu

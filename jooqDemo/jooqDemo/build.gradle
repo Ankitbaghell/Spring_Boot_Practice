@@ -1,0 +1,89 @@
+buildscript {
+	repositories {
+		mavenLocal()
+		mavenCentral()
+	}
+
+	dependencies {
+		classpath 'org.jooq:jooq-codegen:3.16.4'
+		classpath 'mysql:mysql-connector-java:8.0.31'
+	}
+}
+
+ plugins {
+	 id "nu.studer.jooq" version "7.1.1"
+	 id "java"
+}
+
+
+repositories {
+	mavenCentral()
+}
+
+dependencies {
+	implementation group: 'org.jooq', name: 'jooq', version: '3.17.4'
+	implementation group: 'org.springframework', name: 'spring-web', version: '5.3.23'
+	implementation group: 'mysql', name: 'mysql-connector-java', version: '8.0.31'
+
+//	jooqRuntime 'mysql:mysql-connector-java:5.1.6'
+
+
+}
+
+//jooq {
+//	joogDemo(sourceSets.main) {
+//		jdbc {
+//			driver = 'com.mysql.jdbc.Driver'
+//			url = 'jdbc:mysql://localhost:3306'
+//			user = 'root'
+//			password = 'mysql'
+//			schema = 'joogDemo'
+//		}
+//		generator {
+//			database {
+//				name = 'org.jooq.util.mysql.MySQLDatabase'
+//				inputSchema = 'joogDemo'
+//			}
+//		}
+//	}
+//}
+
+
+ import org.jooq.meta.jaxb.Logging
+
+ jooq {
+
+	 configurations {
+		 main {  // name of the jOOQ configuration
+			 generateSchemaSourceOnCompilation = true  // default (can be omitted)
+
+			 generationTool {
+				 logging = Logging.WARN
+				 jdbc {
+					 driver = 'com.mysql.jdbc.Driver'
+					 url = 'jdbc:mysql://localhost:3306/jooqdemo'
+					 user = 'root'
+					 password = 'mysql'
+				 }
+				 generator {
+					 name = 'org.jooq.codegen.DefaultGenerator'
+					 database {
+						 name = 'org.jooq.meta.mysql.MySQLDatabase'
+						 inputSchema = 'public'
+					 }
+					 generate {
+						 deprecated = false
+						 records = true
+						 immutablePojos = true
+						 fluentSetters = true
+					 }
+					 target {
+						 packageName = 'com.jooqDemo.jooqDemo'
+//						 directory = 'build/generated-src/jooq/main'  // default (can be omitted)
+					 }
+					 strategy.name = 'org.jooq.codegen.DefaultGeneratorStrategy'
+				 }
+			 }
+		 }
+	 }
+ }

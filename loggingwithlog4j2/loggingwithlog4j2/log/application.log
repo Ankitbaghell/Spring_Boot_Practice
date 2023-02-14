@@ -1,0 +1,10 @@
+2023-01-14T11:06:21.779+0530 INFO Starting Loggingwithlog4j2Application using Java 17.0.4.1 on HVTNDAL1057 with PID 20720 (C:\Users\ankit.baghel\Downloads\loggingwithlog4j2\loggingwithlog4j2\build\classes\java\main started by ankit.baghel in C:\Users\ankit.baghel\Downloads\loggingwithlog4j2\loggingwithlog4j2)
+2023-01-14T11:06:21.793+0530 DEBUG Running with Spring Boot v2.7.7, Spring v5.3.24
+2023-01-14T11:06:21.796+0530 INFO No active profile set, falling back to 1 default profile: "default"
+2023-01-14T11:06:25.884+0530 INFO Started Loggingwithlog4j2Application in 4.707 seconds (JVM running for 6.479)
+2023-01-14T11:06:25.897+0530 DEBUG A DEBUG Message
+2023-01-14T11:06:25.897+0530 INFO An INFO Message
+2023-01-14T11:06:25.897+0530 WARN A WARN Message
+2023-01-14T11:06:25.897+0530 ERROR An ERROR Message
+2023-01-14T11:06:29.558+0530 DEBUG Request teekshana
+2023-01-14T11:06:29.558+0530 DEBUG Response Hi teekshana

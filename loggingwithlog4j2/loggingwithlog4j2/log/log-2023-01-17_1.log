@@ -1,0 +1,49 @@
+2023-01-17T14:51:35,659 ERROR [boot.diagnostics.LoggingFailureAnalysisReporter] [main] 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+An attempt was made to call a method that does not exist. The attempt was made from the following location:
+
+    org.springframework.boot.logging.log4j2.Log4J2LoggingSystem.initialize(Log4J2LoggingSystem.java:242)
+
+The following method did not exist:
+
+    'void org.apache.logging.log4j.util.PropertiesUtil.addPropertySource(org.apache.logging.log4j.util.PropertySource)'
+
+The calling method's class, org.springframework.boot.logging.log4j2.Log4J2LoggingSystem, was loaded from the following location:
+
+    jar:file:/C:/Users/ankit.baghel/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot/3.0.0/dcf84aaccdb294b8fe53a92b57efecf16708eb2c/spring-boot-3.0.0.jar!/org/springframework/boot/logging/log4j2/Log4J2LoggingSystem.class
+
+The called method's class, org.apache.logging.log4j.util.PropertiesUtil, is available from the following locations:
+
+    jar:file:/C:/Users/ankit.baghel/.gradle/caches/modules-2/files-2.1/org.apache.logging.log4j/log4j-api/2.18.0/c72ad9b1d8d42e4ea7befd8248bf05877af4c63d/log4j-api-2.18.0.jar!/org/apache/logging/log4j/util/PropertiesUtil.class
+
+The called method's class hierarchy was loaded from the following locations:
+
+    org.apache.logging.log4j.util.PropertiesUtil: file:/C:/Users/ankit.baghel/.gradle/caches/modules-2/files-2.1/org.apache.logging.log4j/log4j-api/2.18.0/c72ad9b1d8d42e4ea7befd8248bf05877af4c63d/log4j-api-2.18.0.jar
+
+
+Action:
+
+Correct the classpath of your application so that it contains compatible versions of the classes org.springframework.boot.logging.log4j2.Log4J2LoggingSystem and org.apache.logging.log4j.util.PropertiesUtil
+
+2023-01-17T14:52:14,948 INFO  [logging.loggingwithlog4j2.Loggingwithlog4j2Application] [main] Starting Loggingwithlog4j2Application using Java 17.0.4.1 with PID 12472 (C:\Users\ankit.baghel\Downloads\loggingwithlog4j2\loggingwithlog4j2\build\classes\java\main started by ankit.baghel in C:\Users\ankit.baghel\Downloads\loggingwithlog4j2\loggingwithlog4j2)
+2023-01-17T14:52:14,961 DEBUG [logging.loggingwithlog4j2.Loggingwithlog4j2Application] [main] Running with Spring Boot v3.0.0, Spring v6.0.2
+2023-01-17T14:52:14,962 INFO  [logging.loggingwithlog4j2.Loggingwithlog4j2Application] [main] No active profile set, falling back to 1 default profile: "default"
+2023-01-17T14:52:15,809 INFO  [embedded.tomcat.TomcatWebServer] [main] Tomcat initialized with port(s): 8080 (http)
+2023-01-17T14:52:15,817 INFO  [coyote.http11.Http11NioProtocol] [main] Initializing ProtocolHandler ["http-nio-8080"]
+2023-01-17T14:52:15,818 INFO  [catalina.core.StandardService] [main] Starting service [Tomcat]
+2023-01-17T14:52:15,818 INFO  [catalina.core.StandardEngine] [main] Starting Servlet engine: [Apache Tomcat/10.1.1]
+2023-01-17T14:52:15,908 INFO  [[Tomcat].[localhost].[/]] [main] Initializing Spring embedded WebApplicationContext
+2023-01-17T14:52:15,911 INFO  [servlet.context.ServletWebServerApplicationContext] [main] Root WebApplicationContext: initialization completed in 912 ms
+2023-01-17T14:52:16,259 INFO  [coyote.http11.Http11NioProtocol] [main] Starting ProtocolHandler ["http-nio-8080"]
+2023-01-17T14:52:16,292 INFO  [embedded.tomcat.TomcatWebServer] [main] Tomcat started on port(s): 8080 (http) with context path ''
+2023-01-17T14:52:16,299 INFO  [logging.loggingwithlog4j2.Loggingwithlog4j2Application] [main] Started Loggingwithlog4j2Application in 1.625 seconds (process running for 2.344)
+2023-01-17T14:52:16,302 DEBUG [logging.loggingwithlog4j2.Loggingwithlog4j2Application] [main] A DEBUG Message
+2023-01-17T14:52:16,302 INFO  [logging.loggingwithlog4j2.Loggingwithlog4j2Application] [main] An INFO Message
+2023-01-17T14:52:16,302 WARN  [logging.loggingwithlog4j2.Loggingwithlog4j2Application] [main] A WARN Message
+2023-01-17T14:52:16,303 ERROR [logging.loggingwithlog4j2.Loggingwithlog4j2Application] [main] An ERROR Message

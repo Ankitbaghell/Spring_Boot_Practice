@@ -1,0 +1,43 @@
+plugins {
+	id 'java'
+	id 'org.springframework.boot' version '3.0.0'
+	id 'io.spring.dependency-management' version '1.0.15.RELEASE'
+}
+
+group = 'com.springboot.logging'
+version = '0.0.1-SNAPSHOT'
+sourceCompatibility = '17'
+
+repositories {
+	mavenCentral()
+}
+
+dependencies {
+	implementation 'org.springframework.boot:spring-boot-starter-web'
+//	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+//	implementation 'org.apache.logging.log4j', name: 'log4j-api', version: '2.17.2'
+//	implementation 'org.apache.logging.log4j', name: 'log4j-core', version: '2.17.2'
+//	implementation  'org.apache.logging.log4j', name: 'log4j-slf4j-impl', version: '2.17.2'
+	implementation 'com.fasterxml.jackson.dataformat:jackson-dataformat-yaml:2.13.3'
+//
+//	implementation 'org.apache.logging.log4j:log4j-api'
+//	implementation 'org.apache.logging.log4j:log4j-core'
+//	implementation 'org.apache.logging.log4j:log4j-slf4j-impl'
+
+	implementation('org.springframework.boot:spring-boot-starter-log4j2')
+	implementation('org.apache.logging.log4j:log4j-api:2.19.0')
+	implementation('org.apache.logging.log4j:log4j-core:2.19.0')
+
+
+}
+
+
+configurations {
+	all {
+		exclude group: 'org.springframework.boot', module: 'spring-boot-starter-logging'
+	}
+}
+
+tasks.named('test') {
+	useJUnitPlatform()
+}
