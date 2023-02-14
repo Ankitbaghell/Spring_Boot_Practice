@@ -1,0 +1,9 @@
+spring:
+  main:
+    allow-circular-references: true
+  application:
+    name: user-service
+  config:
+    server:
+      uri: http://localhost:8888
+    import: 'optional:configserver:${spring.config.server.uri}'

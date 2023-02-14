@@ -1,0 +1,31 @@
+server:
+  port: 8888
+
+spring:
+  application:
+    name: CONFIG-SERVER
+  cloud:
+    config:
+      server:
+        git:
+          default-label: Authorization
+          username: ENC(AFSZ5UB+In5gBGPmQatZ1ceQsDm+PsrT)
+          password: ENC(60q8x6a3JFmfg5bYfWB1hpoc07V7Jq60udDaENbTcjbcgC7H6MC6iw==)
+          uri: https://gitlab.com/hexaview/trs/backend
+          repos:
+            local-profile:
+              uri: https://gitlab.com/hexaview/trs/backend
+              pattern: '*/default'
+              default-label: Authorization
+              search-paths:
+                - configs/local
+
+management:
+  security:
+    enabled: false
+
+encrypt:
+  key: APODNU3093r2rbjzxcn09u213asdhy08WRFH
+
+jasypt:
+  key: HEXAVIEWTECH123

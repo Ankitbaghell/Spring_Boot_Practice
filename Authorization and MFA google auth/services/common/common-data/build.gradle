@@ -1,0 +1,5 @@
+apply from: '../../../gradle-scripts/domain-starter-1.0.0.gradle'
+
+dependencies {
+    api("com.zaxxer:HikariCP:${hikariCPVersion}")
+}
