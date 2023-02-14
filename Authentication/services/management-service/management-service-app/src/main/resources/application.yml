@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: management-service
+  flyway:
+    enabled: false
+  config:
+    server:
+      uri: http://localhost:8888
+    import: 'optional:configserver:${spring.config.server.uri}'

@@ -1,0 +1,7 @@
+apply from: '../../gradle-scripts/library-starter-1.0.0.gradle'
+
+dependencies {
+    api(project(":common:common-data"))
+    implementation(project(":common:common-domain"))
+    implementation 'com.fasterxml.jackson.core:jackson-databind:2.0.1'
+}
